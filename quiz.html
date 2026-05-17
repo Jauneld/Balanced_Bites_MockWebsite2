@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BalancedBites Quiz</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="quiz-container">
+  <h1>Health Assessment Quiz</h1>
+
+  <div class="quiz-card">
+    <label>1. What health condition are you managing?</label>
+    <select>
+      <option>Diabetes</option>
+      <option>Hypertension</option>
+      <option>Heart Disease</option>
+      <option>Weight Management</option>
+    </select>
+
+    <label>2. Dietary Preference</label>
+    <select>
+      <option>Low Sodium</option>
+      <option>High Protein</option>
+      <option>Vegetarian</option>
+      <option>Gluten Free</option>
+    </select>
+
+    <label>3. How many meals per week?</label>
+    <input type="range" min="5" max="21">
+
+    <button class="btn" onclick="submitQuiz()">Generate Meal Plan</button>
+  </div>
+
+  <a href="index.html"><button class="btn secondary">Back Home</button></a>
+</div>
+
+<script>
+function submitQuiz(){
+  alert("Demo meal plan generated successfully!");
+}
+</script>
+
+</body>
+</html>
